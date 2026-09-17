@@ -41,7 +41,7 @@ def word_count_map(doc):
     ans = ()
     for word in list:
         ans += (word.strip(), 1)
-    return ans #in progress
+    yield ans #in progress
     pass
 
 def word_count_reduce(group):
