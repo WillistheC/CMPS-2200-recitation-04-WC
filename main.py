@@ -37,6 +37,11 @@ def word_count_map(doc):
     [('i', 1), ('am', 1), ('sam', 1), ('i', 1), ('am', 1)]
     """
     ###TODO
+    list = doc.split(" ")
+    ans = ()
+    for word in list:
+        ans += (word.strip(), 1)
+    return ans #in progress
     pass
 
 def word_count_reduce(group):
