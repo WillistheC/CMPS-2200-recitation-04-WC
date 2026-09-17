@@ -37,7 +37,7 @@ def word_count_map(doc):
     [('i', 1), ('am', 1), ('sam', 1), ('i', 1), ('am', 1)]
     """
     ###TODO
-    list = doc.split(" ")
+    list = doc.split() #works for space, return, tab (any whitespace)
     ans = ()
     for word in list:
         ans += (word.strip(), 1)
